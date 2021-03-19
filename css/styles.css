@@ -506,8 +506,8 @@ main {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
-  .container__comunidad .comunidad__articulo--texto, .container__comunidad .comunidad__articulo--foto {
-    margin: 1em auto;
+  .container__comunidad .comunidad__articulo--texto {
+    margin: 3em auto;
   }
   .container__comunidad .comunidad__articulo .c2 {
     -webkit-box-ordinal-group: 3;

@@ -33,9 +33,8 @@
             grid-template-columns: 1fr;
             grid-template-rows: auto;
 
-            &--texto,
-            &--foto {
-                margin: 1em auto;
+            &--texto {
+                margin: 3em auto;
             }
 
             .c2 {
