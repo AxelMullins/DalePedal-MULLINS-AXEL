@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dale Pedal - Recorridos</title>
+    <meta name="description" content="Dale Pedal es una aplicación que te permite conectar con gente como vos, gente que quiere salir a pedalear. Vas a poder buscar y crear eventos por tu zona.">
+    <meta name="keywords" content="Dale, Pedal, andar, radio, alcance, buscar, km, nivel">
+    <!-- Bootstrap css - cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <!-- Styles css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo-dalePedal.png" alt="" class="header__logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="nav__menu--li none__phone"><a href="index.html">Inicio</a></li>
+                <li class="nav__menu--li none__phone"><a href="comunidad.html">Comunidad</a></li>
+                <li class="nav__menu--li none__phone"><a href="recorridos.html">Recorridos</a></li>
+                <li class="nav__menu--li none__phone"><a href="contacto.html">Contacto</a></li>
+                <li class="nav__menu--li">
+                    <a href="iniciarsesion.html" class="iniciarSesion">
+                        <i class="fas fa-user"></i>
+                        <span>Iniciar Sesión</span>
+                    </a>
+                </li>
+                <li class="nav__menu--li dropdown yes__phone"><button class="btn-primary" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fas fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item p-3" href="comunidad.html"><span>Comunidad</span></a></li>
+                        <li><a class="dropdown-item p-3" href="recorridos.html">Recorridos</a></li>
+                        <li><a class="dropdown-item p-3" href="contacto.html">Contacto</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero__recorridos">
+            <h2 class="hero__recorridos--h2">Encontra el recorrido para vos</h2>
+        </section>
+
+        <div class="container mb-5">
+            <div class="row justify-content-between recorridos__articulo">
+                <div class="articulo__opciones col-lg-5">
+                    <h3 class="articulo__opciones--h3">Busca</h3>
+                    <img src="img/icono-busca.png" alt="" class="articulo__opciones--img">
+                    <p>Vas a poder filtrar por el rango de tu zona y así unirte a eventos accesibles para vos.</p>
+                </div>
+
+                <div class="col-lg-6 pt-sm-3">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ci1">
+                            </div>
+                            <div class="carousel-item ci2">
+                            </div>
+                            <div class="carousel-item ci3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-5">
+            <div class="row justify-content-between recorridos__articulo">
+                <div class="col-lg-6 order-sm-2 pt-sm-3 order-lg-0">
+                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ci4">
+                            </div>
+                            <div class="carousel-item ci5">
+                            </div>
+                            <div class="carousel-item ci6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="articulo__opciones carousel__2 col-lg-5">
+                    <h3 class="articulo__opciones--h3">Crea</h3>
+                    <img src="img/icono-crear.png" alt="" class="articulo__opciones--img">
+                    <p>Vas a poder crear el evento que más se adapte a tus gustos.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contacto">
+            <h3 class="footer--h3">Contacto</h3>
+            <ul>
+                <li class="footer--li"><a href="https://www.behance.net/gallery/108364399/Dale-Pedal-UXUI"
+                        target="_blank"><i class="fas fa-copyright"></i>Dale Pedal</a></li>
+                <li class="footer--li"><a href="https://www.behance.net/gallery/108364399/Dale-Pedal-UXUI"
+                        target="_blank"><i class="fas fa-user"></i>@axelmullins</a></li>
+                <li class="footer--li"><a href="mailto:axelmullins94@gmail.com"><i class="fas fa-envelope"
+                            target="_blank"></i>axelmullins94@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__redes">
+            <h3 class="footer--h3">Redes</h3>
+            <ul>
+                <li class="footer--li"><a href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+                <li class="footer--li"><a href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                <li class="footer--li"><a href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i><span>Instagram</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

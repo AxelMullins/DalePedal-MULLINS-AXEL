@@ -1,0 +1,207 @@
+// MEDIA QUERY
+@media only screen and (max-width: 768px) {
+
+    // Header
+    .header {
+        width: 100%;
+        padding: .5em 1em;
+
+        .nav__menu {
+
+            &--li {
+                .iniciarSesion {
+                    padding: .6em;
+                    background-color: $color--verde;
+                    border-radius: 100%;
+
+                    i {
+                        display: block;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // COMUNIDAD
+    .container__comunidad {
+        .comunidad__articulo {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+            &--texto,
+            &--foto {
+                margin: 1em auto;
+            }
+
+            .c2 {
+                order: 2;
+            }
+        }
+    }
+
+    // Form
+    .contacto__bg--img,
+    .iniciarSesion__bg--img {
+        display: none;
+    }
+
+    // FOOTER
+    .footer {
+
+        &--h3 {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    // Header
+    .header {
+        width: 100%;
+        padding: .5em 1em;
+
+        &__logo {
+            width: 6em;
+        }
+
+        .nav__menu {
+            .none__phone {
+                display: none;
+            }
+
+            button {
+                background: transparent;
+                color: $color--blanco;
+                border: none;
+            }
+
+            .yes__phone {
+                display: block;
+                padding: .2em;
+                font-size: 1.6em;
+            }
+            
+            &--li {
+                .iniciarSesion {
+                    padding: .6em;
+                    background-color: $color--verde;
+                    border-radius: 100%;
+
+                    i {
+                        display: block;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contacto - Iniciar Sesion
+
+    .container__contacto,
+    .container_iniciarSesion {
+        padding: 2em 1em;
+    }
+
+    // Footer
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        &__contacto ul {
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__redes ul {
+            display: flex;
+            font-size: 2em;
+            padding: 0;
+        }
+
+        &--li {
+            a {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+
+                span {
+                    display: none;
+                }
+
+                i {
+                    padding: .4em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+
+    main {
+        width: 100%;
+        margin: auto;
+    }
+
+    .hero {
+        margin-bottom: 4em;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .tiendas--img {
+            margin: .5em .4em;
+        }
+    }
+
+    // Comunidad
+    .container__comunidad {
+        padding-top: 2em;
+        .comunidad__articulo {
+
+            &--texto {
+                padding: 0;
+            }
+
+            &--foto {
+                .comentarios {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0;
+                }
+            }
+
+            .c2 {
+                order: 2;
+            }
+        }
+    }
+
+    // Recorridos 
+
+    .hero__recorridos {
+        &--h2 {
+            padding: 1em 0;
+        }
+    }
+
+    .recorridos__articulo {
+        .articulo__opciones {
+            width: 90vw;
+            margin: 1em auto;
+            order: -1;
+        }
+    }
+}

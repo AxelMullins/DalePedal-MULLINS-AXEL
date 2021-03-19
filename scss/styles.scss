@@ -1,0 +1,318 @@
+// IMPORT
+@import "variables", "reset", "layout/header", "layout/footer";
+
+// INDEX
+.hero {
+    .hero--img {
+        background: url(../img/pantalla-principal.png) no-repeat center;
+        background-size: contain;
+        height: 70vh;
+    }
+
+    .span__dalePedal {
+        color: $color--rojo;
+        font-weight: 600;
+    }
+
+    .tiendas--img {
+        height: 2.5em;
+    }
+}
+
+// COMUNIDAD
+.container__comunidad {
+    display: flex;
+    flex-direction: column;
+
+    .comunidad__articulo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        &--texto {
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            padding: 3em 0;
+
+            h2 {
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                padding-bottom: .5em;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        &--foto {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .comentarios {
+                background: url(../img/bg-foto-comunidad.png);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 1em 2em;
+
+                p {
+                    padding: 0 2em;
+                    color: $color--blanco;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        @for $i from 1 through 3 {
+            .c#{$i} {
+                background: url(../img/comunidad-#{$i}.png) no-repeat center/cover;
+                height: 60vh;
+            }
+        }
+    }
+}
+
+// RECORRIDOS
+.hero__recorridos {
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+    &--h2 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        padding: 2em 0;
+    }
+}
+
+.recorridos__articulo {
+    .articulo__opciones {
+        background-color: $color--bisque;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+
+        &--h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        &--img {
+            padding: 1em 0;
+        }
+    }
+}
+
+.carousel {
+    &-inner {
+        background-color: rgba(172, 172, 172, 0.123);
+        border-radius: 1em;
+
+        @for $i from 1 through 6 {
+            .ci#{$i} {
+                background: url(../img/carousel/rc-#{$i}.png) no-repeat center;
+                background-size: contain;
+            }
+        }
+    }
+
+    &-control-prev-icon,
+    &-control-next-icon {
+        background-color: $color--verde;
+        border-radius: 30%;
+    }
+
+    &-item {
+        height: 40vh;
+    }
+}
+
+// CONTACTO
+.container__contacto {
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .form {
+        border: 1px solid $color--gris;
+
+        &__bg--red {
+            background-color: $color--rojo;
+            color: $color--blanco;
+            padding: 1em 1em;
+
+            h3 {
+                padding-top: .6em;
+            }
+        }
+
+        &__bg--white {
+            background-color: $color--blanco;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+
+            input[type=text],
+            input[type=email] {
+                background: none;
+                font-size: 1rem;
+                border: none;
+                border-bottom: 1px solid $color--gris;
+                width: 100%;
+                font-family: 'Roboto', sans-serif;
+                padding: .2em 1em;
+                margin: .4em 0;
+                outline: none;
+            }
+
+            textarea {
+                background: none;
+                resize: none;
+                border: 1px solid $color--gris;
+                font-size: 1rem;
+                width: 100%;
+                font-family: 'Roboto', sans-serif;
+                padding: .7em 1em;
+                outline: none;
+            }
+
+            input[type=checkbox] {
+                margin: 1em 0;
+            }
+
+            .checkbox {
+                display: flex;
+                align-items: baseline;
+
+                label {
+                    padding-left: .5em;
+                }
+            }
+
+            input[type=submit] {
+                margin: .6em 0;
+                text-transform: uppercase;
+                width: 100%;
+                padding: .6em 1em;
+                letter-spacing: .1em;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                background: $color--verde;
+                border-radius: .5em;
+                color: $color--blanco;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .contacto__bg--img {
+        width: 50%;
+        margin-left: 3em;
+    }
+}
+
+// INICIAR SESIÓN
+.container__iniciarSesion {
+    @extend .container__contacto;
+
+    .form {
+        @extend .form;
+
+        &__bg--red {
+            @extend .form__bg--red;
+        }
+
+        &__bg--white {
+            @extend .form__bg--white;
+
+            input[type=email],
+            input[type=password] {
+                background: none;
+                font-size: 1rem;
+                border: none;
+                border-bottom: 1px solid $color--gris;
+                width: 100%;
+                font-family: 'Roboto', sans-serif;
+                padding: .2em 1em;
+                margin: .4em 0;
+                outline: none;
+            }
+
+            input[type=checkbox] {
+                margin: 1em 0;
+            }
+
+            input[type=submit] {
+                margin: .6em 0;
+                text-transform: uppercase;
+                width: 100%;
+                padding: .6em 1em;
+                letter-spacing: .1em;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                background: $color--verde;
+                border-radius: .5em;
+                color: $color--blanco;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        
+        .form__otros {
+            background-color: $color--blanco;
+            padding: 0 1em 1em 1em;
+            display: flex;
+            flex-direction: column;
+            .olvidaste__contraseña {
+                text-align: center;
+                padding: .5em;
+                font-size: 1rem;
+                color: $color--gris;
+            }
+
+            .iniciar__sesion__con {
+                text-align: center;
+                font-size: 1.2rem;
+                padding-top: .8em;
+                text-transform: uppercase;
+                color: rgb(116, 116, 116);
+                border-top: 1px solid $color--gris;
+            }
+
+            .button__redes {
+                margin: .6em 0;
+                width: 100%;
+                padding: .6em 1em;
+                letter-spacing: .01em;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1rem;
+                text-align: center;
+                background: $color--blanco;
+                border: 1px solid $color--gris;
+                border-radius: .5em;
+                color: $color--negro;
+                cursor: pointer;
+
+                i {
+                    padding: 0 .5em;
+                }
+        }
+        }
+    }
+
+    .iniciarSesion__bg--img {
+        @extend .contacto__bg--img;
+    }
+}
+
+@import "mediaquery";

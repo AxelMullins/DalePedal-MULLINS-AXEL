@@ -1,0 +1,30 @@
+// FOOTER
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color--negro;
+    color: $color--blanco;
+    padding: 1.5em 6em;
+
+    &--h3 {
+        color: $color--bisque;
+        padding: .5em 0;
+        text-transform: uppercase;
+        border-bottom: 1px solid $color--bisque;
+    }
+
+    &--li a {
+        color: $color--blanco;
+
+        i {
+            font-size: 1.3em;
+            padding: .4em .8em .4em 0;
+        }
+    }
+
+    &--li a:hover {
+        color: $color--bisque;
+    }
+}

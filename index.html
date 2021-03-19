@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dale Pedal - Axel Mullins</title>
+    <meta name="description"
+        content="Dale Pedal es una aplicación que te permite conectar con gente como vos, gente que quiere salir a pedalear. Vas a poder buscar y crear eventos por tu zona.">
+    <meta name="keywords" content="Dale, Pedal, andar, bicicleta, bike, bikes, app, aplicación">
+    <!-- Bootstrap css - cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <!-- Styles css -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo-dalePedal.png" alt="" class="header__logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="nav__menu">
+                <li class="nav__menu--li none__phone"><a href="index.html">Inicio</a></li>
+                <li class="nav__menu--li none__phone"><a href="comunidad.html">Comunidad</a></li>
+                <li class="nav__menu--li none__phone"><a href="recorridos.html">Recorridos</a></li>
+                <li class="nav__menu--li none__phone"><a href="contacto.html">Contacto</a></li>
+                <li class="nav__menu--li">
+                    <a href="iniciarsesion.html" class="iniciarSesion">
+                        <i class="fas fa-user"></i>
+                        <span>Iniciar Sesión</span>
+                    </a>
+                </li>
+                <li class="nav__menu--li dropdown yes__phone"><button class="btn-primary" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i
+                            class="fas fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item p-3" href="comunidad.html"><span>Comunidad</span></a></li>
+                        <li><a class="dropdown-item p-3" href="recorridos.html">Recorridos</a></li>
+                        <li><a class="dropdown-item p-3" href="contacto.html">Contacto</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container hero">
+            <section class="row align-items-center m-2">
+                <div class="col-lg-6 hero--img">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Buscá</h2>
+                    <h2>Creá</h2>
+                    <h2>Pedalea</h2>
+                    <p><span class="span__dalePedal">Dale Pedal</span> es una aplicación que te
+                        permite conectar con gente como vos,
+                        gente que quiere salir a pedalear un rato.</p>
+                    <p>Vas a poder buscar eventos creados por
+                        otros usuarios por tu zona, y si no
+                        encontrás el indicado, vos mismo lo vas a
+                        poder crear.</p>
+                    <a href="#"><img src="img/google-play.png" alt="Google Play" class="tiendas--img"></a>
+                    <a href="#"><img src="img/app-store.png" alt="App Store" class="tiendas--img"></a>
+                </div>
+            </section>
+        </div>
+
+        <section class="container">
+
+            <article class="row my-3 justify-content-between align-items-center">
+                <div class="d-none d-lg-block col-lg-3">
+                    <img src="img/recurso-inicio.png">
+                </div>
+                <div class="col-sm-12 text-sm-center pt-sm-3 col-md-6 col-lg-3 text-center">
+                    <h3><span class="border-bottom border-success border-2">Inicio y Login</span></h3>
+                    <p>Vas a poder ingresar de una forma rápida y segura desde Google o Facebook.</p>
+                </div>
+                <div class="col-sm-12 d-md-flex text-center col-md-6 col-lg-3">
+                    <img src="gif/inicio-de-sesion.gif" alt="Animación inicio de Sesión">
+                </div>
+            </article>
+
+            <article class="row my-3 justify-content-between align-items-center flex-sm-row-reverse">
+                <div class="d-none d-lg-block col-lg-3">
+                    <img src="img/recurso-crear.png">
+                </div>
+                <div class="col-sm-12 text-sm-center pt-sm-3 col-md-6 col-lg-3 text-center">
+                    <h3><span class="border-bottom border-success border-2">Explorar Eventos</span></h3>
+                    <p>Una vez definido el rango de búsqueda, vas a poder ver los eventos para encontrar el indicado.
+                    </p>
+                    <p>Además podes ver tus estadísticas.</p>
+                </div>
+                <div class="col-sm-12 d-md-flex text-center col-md-6 col-lg-3">
+                    <img src="gif/explorar-evento.gif" alt="Animación explorar eventos">
+                </div>
+            </article>
+
+            <article class="row my-3 justify-content-between align-items-center">
+                <div class="d-none d-lg-block col-lg-3">
+                    <img src="img/recurso-explorar.png">
+                </div>
+                <div class="col-sm-12 text-sm-center pt-sm-3 col-md-6 col-lg-3 text-center">
+                    <h3><span class="border-bottom border-success border-2">Crear Eventos</span></h3>
+                    <p>Vas a poder ingresar los datos para crear un recorrido nuevo o seleccionar uno preestablecido.
+                    </p>
+                    <p>Luego te pedirá que definas fecha y hora.</p>
+                </div>
+                <div class="col-sm-12 d-md-flex text-center col-md-6 col-lg-3">
+                    <img src="gif/nuevo-evento.gif" alt="Animación crear evento">
+                </div>
+            </article>
+
+            <article class="row my-3 justify-content-between align-items-center flex-sm-row-reverse">
+                <div class="d-none d-lg-block col-lg-3">
+                    <img src="img/recurso-eventoactivo.png">
+                </div>
+                <div class="col-sm-12 text-sm-center pt-sm-3 col-md-6 col-lg-3 text-center">
+                    <h3><span class="border-bottom border-success border-2">Evento Activo</span></h3>
+                    <p>Llegada la hora, vas a poder iniciar tu actividad, lo que indicara en el mapa tanto tu ubicación
+                        como los participantes del evento.</p>
+                    <p>También vas a poder ver los integrantes y chatear si es que necesitas comunicarte con ellos.</p>
+                </div>
+                <div class="col-sm-12 d-md-flex text-center col-md-6 col-lg-3">
+                    <img src="gif/evento-activo.gif" alt="Animación evento activo">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__contacto">
+            <h3 class="footer--h3">Contacto</h3>
+            <ul>
+                <li class="footer--li"><a href="https://www.behance.net/gallery/108364399/Dale-Pedal-UXUI"
+                        target="_blank"><i class="fas fa-copyright"></i>Dale Pedal</a></li>
+                <li class="footer--li"><a href="https://www.behance.net/gallery/108364399/Dale-Pedal-UXUI"
+                        target="_blank"><i class="fas fa-user"></i>@axelmullins</a></li>
+                <li class="footer--li"><a href="mailto:axelmullins94@gmail.com"><i class="fas fa-envelope"
+                            target="_blank"></i>axelmullins94@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__redes">
+            <h3 class="footer--h3">Redes</h3>
+            <ul>
+                <li class="footer--li"><a href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+                <li class="footer--li"><a href="https://twitter.com/" target="_blank"><i
+                            class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                <li class="footer--li"><a href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i><span>Instagram</span></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
