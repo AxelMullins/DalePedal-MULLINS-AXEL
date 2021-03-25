@@ -60,32 +60,33 @@
 
     <main class="container__iniciarSesion">
         <img src="img/bg-login.png" alt="" class="iniciarSesion__bg--img">
-        <form class="form" action="">
+
+        <div class="iniciarSesion">
             <div class="form__bg--red">
                 <h3>¡Hola!</h3>
-                <p>Ingresa tus datos para iniciar sesión</p>
+                <p>Ingresa tus datos para iniciar sesión.</p>
             </div>
-            <fieldset>
-                <div class="form__bg--white">
-                    <label for="email" hidden>Ingresa tu email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
-                    <label for="password" hidden>Ingresa tu contraseña</label>
-                    <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" required />
-                    <div class="checkbox">
-                        <input type="checkbox" name="checkbox" id="checkbox" />
-                        <label for="checkbox">Recordarme</label>
+            <form class="form" action="">
+                <fieldset>
+                    <div class="form__bg--white">
+                        <label for="email" hidden>Ingresa tu email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" required />
+                        <label for="password" hidden>Ingresa tu contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña"
+                            required />
+                        <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" /> Recordarme</label>
+                        <input type="submit" value="Ingresar" />
                     </div>
-                    <input type="submit" value="Ingresar" />                    
-                </div>
-                <div class="form__otros">
-                    <a href="#" class="olvidaste__contraseña">¿Olvidaste la contraseña?</a>
-                    <h4 class="iniciar__sesion__con">O inicia sesión con</h4>
-                    <a href="#" class="button__redes"><i class="fab fa-google"></i> Iniciar sesión con Google</a>
-                    <a href="#" class="button__redes"><i class="fab fa-facebook-square"></i> Iniciar sesión con
-                        Facebook</a>
-                </div>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
+            <div class="form__bg--white form__otros">
+                <a href="#" class="olvidaste__contraseña">¿Olvidaste la contraseña?</a>
+                <h4 class="iniciar__sesion__con">O inicia sesión con</h4>
+                <a href="#" class="button__redes"><i class="fab fa-google"></i> Iniciar sesión con Google</a>
+                <a href="#" class="button__redes"><i class="fab fa-facebook-square"></i> Iniciar sesión con
+                    Facebook</a>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">

@@ -8,6 +8,11 @@
     color: $color--blanco;
     padding: 1.5em 6em;
 
+    &__contacto ul,
+    &__redes ul{
+        padding: 0;
+    }
+
     &--h3 {
         color: $color--bisque;
         padding: .5em 0;
@@ -15,12 +20,15 @@
         border-bottom: 1px solid $color--bisque;
     }
 
-    &--li a {
-        color: $color--blanco;
+    &--li {
 
-        i {
-            font-size: 1.3em;
-            padding: .4em .8em .4em 0;
+        a {
+            color: $color--blanco;
+
+            i {
+                font-size: 1.3em;
+                padding: .4em .8em 0 0;
+            }
         }
     }
 

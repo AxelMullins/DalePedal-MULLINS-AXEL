@@ -32,6 +32,8 @@ main {
           align-items: center;
   background: url(../img/bg-header.png);
   padding: .5em 4em;
+  -webkit-box-shadow: 0 0 15px #808080;
+          box-shadow: 0 0 15px #808080;
 }
 
 .header__logo {
@@ -100,6 +102,11 @@ main {
   padding: 1.5em 6em;
 }
 
+.footer__contacto ul,
+.footer__redes ul {
+  padding: 0;
+}
+
 .footer--h3 {
   color: #ffe4c4;
   padding: .5em 0;
@@ -113,7 +120,7 @@ main {
 
 .footer--li a i {
   font-size: 1.3em;
-  padding: .4em .8em .4em 0;
+  padding: .4em .8em 0 0;
 }
 
 .footer--li a:hover {
@@ -203,17 +210,17 @@ main {
 }
 
 .container__comunidad .comunidad__articulo .c1 {
-  background: url(../img/comunidad-1.png) no-repeat center/cover;
+  background: url(../img/comunidad-1.png) no-repeat top/cover;
   height: 60vh;
 }
 
 .container__comunidad .comunidad__articulo .c2 {
-  background: url(../img/comunidad-2.png) no-repeat center/cover;
+  background: url(../img/comunidad-2.png) no-repeat top/cover;
   height: 60vh;
 }
 
 .container__comunidad .comunidad__articulo .c3 {
-  background: url(../img/comunidad-3.png) no-repeat center/cover;
+  background: url(../img/comunidad-3.png) no-repeat top/cover;
   height: 60vh;
 }
 
@@ -231,8 +238,10 @@ main {
 }
 
 .recorridos__articulo .articulo__opciones {
-  background-color: #ffe4c4;
-  border-radius: 2em;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 10px 10px 10px -6px #808080;
+          box-shadow: 10px 10px 10px -6px #808080;
+  border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,21 +324,104 @@ main {
           align-items: center;
 }
 
-.container__contacto .form, .container__iniciarSesion .form {
-  border: 1px solid #808080;
+.container__contacto .contacto, .container__iniciarSesion .contacto, .container__iniciarSesion .iniciarSesion {
+  -webkit-box-shadow: 10px 10px 10px -6px #808080;
+          box-shadow: 10px 10px 10px -6px #808080;
+  border-radius: 8px;
 }
 
-.container__contacto .form__bg--red, .container__iniciarSesion .form__bg--red {
+.container__contacto .contacto .form__bg--red, .container__iniciarSesion .contacto .form__bg--red, .container__iniciarSesion .iniciarSesion .form__bg--red {
   background-color: #B5303B;
   color: #fff;
   padding: 1em 1em;
+  border-radius: 8px 8px 0 0;
 }
 
-.container__contacto .form__bg--red h3, .container__iniciarSesion .form__bg--red h3 {
+.container__contacto .contacto .form__bg--red h3, .container__iniciarSesion .contacto .form__bg--red h3, .container__iniciarSesion .iniciarSesion .form__bg--red h3 {
   padding-top: .6em;
 }
 
-.container__contacto .form__bg--white, .container__iniciarSesion .form__bg--white {
+.container__contacto .contacto .form, .container__iniciarSesion .contacto .form, .container__iniciarSesion .iniciarSesion .form {
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #808080;
+  border-top: none;
+}
+
+.container__contacto .contacto .form__bg--white, .container__iniciarSesion .contacto .form__bg--white, .container__iniciarSesion .iniciarSesion .form__bg--white {
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__contacto .contacto .form__bg--white input[type=text], .container__iniciarSesion .contacto .form__bg--white input[type=text], .container__iniciarSesion .iniciarSesion .form__bg--white input[type=text],
+.container__contacto .contacto .form__bg--white input[type=email],
+.container__iniciarSesion .contacto .form__bg--white input[type=email],
+.container__iniciarSesion .iniciarSesion .form__bg--white input[type=email] {
+  background: none;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #808080;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding: .2em 1em;
+  margin: .4em 0;
+  outline: none;
+}
+
+.container__contacto .contacto .form__bg--white textarea, .container__iniciarSesion .contacto .form__bg--white textarea, .container__iniciarSesion .iniciarSesion .form__bg--white textarea {
+  background: none;
+  resize: none;
+  border: 1px solid #808080;
+  font-size: 1rem;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding: .7em 1em;
+  outline: none;
+}
+
+.container__contacto .contacto .form__bg--white input[type=checkbox], .container__iniciarSesion .contacto .form__bg--white input[type=checkbox], .container__iniciarSesion .iniciarSesion .form__bg--white input[type=checkbox] {
+  margin-top: .5em;
+}
+
+.container__contacto .contacto .form__bg--white input[type=checkbox] label, .container__iniciarSesion .contacto .form__bg--white input[type=checkbox] label, .container__iniciarSesion .iniciarSesion .form__bg--white input[type=checkbox] label {
+  padding-left: em;
+}
+
+.container__contacto .contacto .form__bg--white input[type=submit], .container__iniciarSesion .contacto .form__bg--white input[type=submit], .container__iniciarSesion .iniciarSesion .form__bg--white input[type=submit] {
+  margin: .6em 0;
+  text-transform: uppercase;
+  width: 100%;
+  padding: .6em 1em;
+  letter-spacing: .1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background: #2DB58D;
+  border-radius: .5em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.container__contacto .contacto__bg--img, .container__iniciarSesion .contacto__bg--img {
+  max-width: 100%;
+  margin-left: 3em;
+}
+
+.container__iniciarSesion .iniciarSesion .form {
+  border: none;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-radius: 0px;
+}
+
+.container__iniciarSesion .iniciarSesion .form__bg--white {
   background-color: #fff;
   padding: 1em;
   display: -webkit-box;
@@ -341,9 +433,8 @@ main {
           flex-direction: column;
 }
 
-.container__contacto .form__bg--white input[type=text], .container__iniciarSesion .form__bg--white input[type=text],
-.container__contacto .form__bg--white input[type=email],
-.container__iniciarSesion .form__bg--white input[type=email] {
+.container__iniciarSesion .iniciarSesion .form__bg--white input[type=email],
+.container__iniciarSesion .iniciarSesion .form__bg--white input[type=password] {
   background: none;
   font-size: 1rem;
   border: none;
@@ -355,35 +446,11 @@ main {
   outline: none;
 }
 
-.container__contacto .form__bg--white textarea, .container__iniciarSesion .form__bg--white textarea {
-  background: none;
-  resize: none;
-  border: 1px solid #808080;
-  font-size: 1rem;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  padding: .7em 1em;
-  outline: none;
-}
-
-.container__contacto .form__bg--white input[type=checkbox], .container__iniciarSesion .form__bg--white input[type=checkbox] {
+.container__iniciarSesion .iniciarSesion .form__bg--white input[type=checkbox] {
   margin: 1em 0;
 }
 
-.container__contacto .form__bg--white .checkbox, .container__iniciarSesion .form__bg--white .checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.container__contacto .form__bg--white .checkbox label, .container__iniciarSesion .form__bg--white .checkbox label {
-  padding-left: .5em;
-}
-
-.container__contacto .form__bg--white input[type=submit], .container__iniciarSesion .form__bg--white input[type=submit] {
+.container__iniciarSesion .iniciarSesion .form__bg--white input[type=submit] {
   margin: .6em 0;
   text-transform: uppercase;
   width: 100%;
@@ -398,44 +465,10 @@ main {
   cursor: pointer;
 }
 
-.container__contacto .contacto__bg--img, .container__iniciarSesion .contacto__bg--img, .container__iniciarSesion .iniciarSesion__bg--img {
-  width: 50%;
-  margin-left: 3em;
-}
-
-.container__iniciarSesion .form__bg--white input[type=email],
-.container__iniciarSesion .form__bg--white input[type=password] {
-  background: none;
-  font-size: 1rem;
-  border: none;
+.container__iniciarSesion .iniciarSesion .form__otros {
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
   border-bottom: 1px solid #808080;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  padding: .2em 1em;
-  margin: .4em 0;
-  outline: none;
-}
-
-.container__iniciarSesion .form__bg--white input[type=checkbox] {
-  margin: 1em 0;
-}
-
-.container__iniciarSesion .form__bg--white input[type=submit] {
-  margin: .6em 0;
-  text-transform: uppercase;
-  width: 100%;
-  padding: .6em 1em;
-  letter-spacing: .1em;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  background: #2DB58D;
-  border-radius: .5em;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.container__iniciarSesion .form .form__otros {
   background-color: #fff;
   padding: 0 1em 1em 1em;
   display: -webkit-box;
@@ -447,23 +480,23 @@ main {
           flex-direction: column;
 }
 
-.container__iniciarSesion .form .form__otros .olvidaste__contraseña {
+.container__iniciarSesion .iniciarSesion .form__otros .olvidaste__contraseña {
   text-align: center;
-  padding: .5em;
+  padding: 0 .5em .5em .5em;
   font-size: 1rem;
   color: #808080;
 }
 
-.container__iniciarSesion .form .form__otros .iniciar__sesion__con {
+.container__iniciarSesion .iniciarSesion .form__otros .iniciar__sesion__con {
   text-align: center;
   font-size: 1.2rem;
   padding-top: .8em;
   text-transform: uppercase;
-  color: #747474;
+  color: #808080;
   border-top: 1px solid #808080;
 }
 
-.container__iniciarSesion .form .form__otros .button__redes {
+.container__iniciarSesion .iniciarSesion .form__otros .button__redes {
   margin: .6em 0;
   width: 100%;
   padding: .6em 1em;
@@ -478,8 +511,13 @@ main {
   cursor: pointer;
 }
 
-.container__iniciarSesion .form .form__otros .button__redes i {
+.container__iniciarSesion .iniciarSesion .form__otros .button__redes i {
   padding: 0 .5em;
+}
+
+.container__iniciarSesion .iniciarSesion__bg--img {
+  max-width: 100%;
+  margin-right: 3em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -514,7 +552,7 @@ main {
         -ms-flex-order: 2;
             order: 2;
   }
-  .contacto__bg--img, .container__iniciarSesion .iniciarSesion__bg--img,
+  .contacto__bg--img,
   .iniciarSesion__bg--img {
     display: none;
   }
@@ -606,6 +644,7 @@ main {
     margin: auto;
   }
   .hero {
+    margin-top: -3em;
     margin-bottom: 4em;
   }
   .hero h2 {
@@ -637,6 +676,7 @@ main {
             order: 2;
   }
   .hero__recorridos--h2 {
+    font-size: 2em;
     padding: 1em 0;
   }
   .recorridos__articulo .articulo__opciones {
@@ -645,6 +685,12 @@ main {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+  .contacto, .container__iniciarSesion .iniciarSesion {
+    width: 90%;
+  }
+  .contacto textarea, .container__iniciarSesion .iniciarSesion textarea {
+    height: 100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
