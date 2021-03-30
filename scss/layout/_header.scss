@@ -6,6 +6,8 @@
     background: url(../img/bg-header.png);
     padding: .5em 4em;
     box-shadow: 0 0 15px $color--gris;
+    position: relative;
+    z-index: 1;
 
     &__logo {
         width: 8em;

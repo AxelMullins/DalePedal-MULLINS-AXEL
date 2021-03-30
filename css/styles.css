@@ -34,6 +34,8 @@ main {
   padding: .5em 4em;
   -webkit-box-shadow: 0 0 15px #808080;
           box-shadow: 0 0 15px #808080;
+  position: relative;
+  z-index: 1;
 }
 
 .header__logo {
