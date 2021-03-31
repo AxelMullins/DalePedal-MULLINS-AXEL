@@ -10,7 +10,20 @@
     z-index: 1;
 
     &__logo {
-        width: 8em;
+        display: flex;
+
+        img {
+            width: 56px;
+            height: 56px;
+            margin: auto;
+        }
+
+        h1 {
+            color: $color--blanco;
+            font-size: 1.5rem;
+            padding-left: .3em;
+            margin: auto;
+        }
     }
 
     .nav__menu {

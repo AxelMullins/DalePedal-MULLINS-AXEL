@@ -39,7 +39,22 @@ main {
 }
 
 .header__logo {
-  width: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo img {
+  width: 56px;
+  height: 56px;
+  margin: auto;
+}
+
+.header__logo h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-left: .3em;
+  margin: auto;
 }
 
 .header .nav__menu {
@@ -526,6 +541,13 @@ main {
   .header {
     width: 100%;
     padding: .5em 1em;
+  }
+  .header__logo img {
+    width: 48px;
+    height: 48px;
+  }
+  .header__logo h1 {
+    font-size: 1.2rem;
   }
   .header .nav__menu--li .iniciarSesion {
     padding: .6em;
