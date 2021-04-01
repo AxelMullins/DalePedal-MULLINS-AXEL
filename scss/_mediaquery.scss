@@ -69,6 +69,25 @@
             text-align: center;
         }
     }
+    
+    // 404
+
+    .container__404 {
+        width: 90%;
+
+        .error {
+        margin-top: 0;
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+            &__img {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 1em;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 640px) {
